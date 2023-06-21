@@ -1,0 +1,35 @@
+#pfp {
+    width: 20%;
+    display: block;
+    margin: 0 auto;
+    border: 2px;
+    border-radius: 25px;
+    box-shadow: 2.5px 5px;
+}
+  
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+.my-form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.form-control {
+    background-color: #000;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.btn-primary {
+    background-color: #000;
+    border-color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #333;
+    border-color: #fff;
+    color: #fff;
+}

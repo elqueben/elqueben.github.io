@@ -1,0 +1,45 @@
+/* Add some padding to the body to give space for the navbar */
+body {
+    padding-top: 70px;
+  }
+  
+  /* Refine the appearance of the container */
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Style the section headings */
+  h1, h2 {
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  /* Style the navigation links */
+  .navbar-nav .nav-link {
+    color: #fff;
+  }
+  
+  /* Change the background color of the navbar on scroll */
+  .navbar-scrolled {
+    background-color: #222;
+  }
+  
+  /* Add a smooth transition for the background color change */
+  .navbar {
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  /* Add an interactive background that changes tone when scrolling */
+  body {
+    background: linear-gradient(to bottom, #FFA07A, #87CEEB);
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  
+  /* Darken the background when scrolling */
+  body.scrolled {
+    background: linear-gradient(to bottom, #FF8C69, #6495ED);
+  }
+  
