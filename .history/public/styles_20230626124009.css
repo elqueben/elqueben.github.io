@@ -110,7 +110,7 @@ h3 {
     border-color: #222;
   }
   
-.btn-primary:active {
+  .btn-primary:active {
     background-color: #222;
     transform: translateY(2px);
   }

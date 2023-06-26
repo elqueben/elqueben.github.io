@@ -49,20 +49,14 @@
       </div>
     </div>
   </div>
-  <div class="container my-form mt-3">
-    <h3 class="text-center mb-4">Contact Me</h3>
-    <form onsubmit="sendEmail(); return false;">
-      <div class="mb-3">
-        <input type="text" class="form-control" id="name" placeholder="Your Name" required>
-      </div>
-      <div class="mb-3">
-        <input type="email" class="form-control" id="email" placeholder="Email Id" required>
-      </div>
-      <div class="mb-3">
-        <textarea class="form-control" id="message" rows="4" placeholder="Hey Kevin..." required></textarea>
-      </div>
-      <button type="submit" class="btn btn-primary">Submit</button>
+  <div>
+    <form onsubmit="sendEmail()">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Email Id" required>
+      <textarea id="message" rows="4" placeholder="Hey Kevin..." required></textarea>
+      <button>Submit</button>
     </form>
+    
   </div>
   <div class="footer text-center mt-3">
     <h5>Get in contact with me</h5>
@@ -81,15 +75,17 @@
   <script>
     function sendEmail() {
       Email.send({
-        SecureToken: "b2f831c8-1c8d-4aaf-bec2-053e56762b6b",
-        To: "kewi.cardenas@gmail.com",
+        Host: "smtp.yourisp.com",
+        Username: "kewi.cardenas@gmail.com",
+        Password: "Cardenas123",
+        To: "elqueben@gmail.cpm",
         From: document.getElementById("email").value,
-        Subject: "New Email from Portfolio",
+        Subject: "This is a subject",
         Body: "Name: " + document.getElementById("name").value
         + "<br>Email: " + document.getElementById("email").value
-        + "<br>Message: " + document.getElementById("message").value
+        + "<br>Message: " + document.getElementById()
       }).then(
-        message => alert("message sent")
+        message => alert(message)
       )
     }
   </script>
